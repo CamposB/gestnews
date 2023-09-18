@@ -11,6 +11,7 @@ include "templates/header.php";
 // 			}
 // 		}
 // 	}
+
 ?>
 <main id="posts-conteiner">
 	<?php
