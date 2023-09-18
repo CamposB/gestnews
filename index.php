@@ -33,6 +33,10 @@ require("data/conn.php")
 		foreach ($stmt as $row) {
 			?>
 			<div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
+				<?= $id = $row['id']; 
+				$title = htmlspecialchars($row['title']);?>
+            	<li><a href="post.php?id=<?= $id ?>"><?= $title ?></a></li>
+				
 				<h3><a href="post.php?id=<?= $row['id'] ?>"><?= htmlspecialchars($row['title']) ?></a></h3>
 				<p>Autor: <?= htmlspecialchars($row['author']) ?></p>
 				<p><?= htmlspecialchars($row['notice']) ?></p>
