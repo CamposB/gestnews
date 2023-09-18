@@ -26,6 +26,7 @@ require("data/conn.php")
 			<title>Notícias</title>
 		</head>
 		<body>
+
 			<h2>Notícias</h2>
 		<?php
 
