@@ -180,4 +180,10 @@ header h2 {
     text-decoration: underline;
 }
 
+/* Estilizando o título dentro do card */
+.card h3 {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center; /* Alinhar o texto ao centro */
+}
 
