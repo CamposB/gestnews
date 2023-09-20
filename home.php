@@ -86,6 +86,7 @@ require("data/conn.php")
                 </section>
                 <section> 
                 <?php
+                    $id = 0;
                     // Consulta SQL para buscar todas as notícias a partir do ID 5 em diante
                     $sql = "SELECT * FROM post WHERE id > 5";
                     $stmt = $pdo->query($sql);
@@ -94,13 +95,18 @@ require("data/conn.php")
                     if ($stmt->rowCount() > 0) {
                         // Exiba as notícias em forma de cards
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            $id = $row['id'];
                             ?>
                                 <div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
                                     <img src="<?= htmlspecialchars($row['img']) ?>" alt="Imagem da Notícia" width="300" height="300" style="float: left; margin-right: 10px;">
                                     <div style="overflow: hidden;">
                                         <h3><?= htmlspecialchars($row['title']) ?></h3>
                                         <p>Autor: <?= htmlspecialchars($row['author']) ?></p>
-                                        <p><?= htmlspecialchars($row['notice']) ?></p>
+                                        
+                                        <p><?= strlen($row['notice']) > 1100 ? substr(htmlspecialchars($row['notice']), 0, 1100) . '... <a href="post.php?id=' . $id  . '">Leia Mais</a>' : htmlspecialchars($row['notice']) ?></p>
+
+
+
                                     </div>
                                     <div style="clear: both;"></div>
                                 </div>

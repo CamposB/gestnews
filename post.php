@@ -1,18 +1,4 @@
-<?php
-include "templates/header.php";
 
-// if (isset($_GET['id'])) {
-// 	$post_ID = $_GET['id'];
-// 	$currentPost;
-
-// 	foreach ($posts as $post) {
-// 		if ($post['id'] == $post_ID) {
-// 			$currentPost = $post;
-// 			}
-// 		}
-// 	}
-
-?>
 <main id="posts-conteiner">
 	<?php
 	require_once("data/conn.php");
@@ -43,8 +29,11 @@ include "templates/header.php";
 				</head>
 				<body>
 					<h1><?= htmlspecialchars($row['title']) ?></h1>
-					<p>Autor: <?= htmlspecialchars($row['author']) ?></p>
 					<p><?= htmlspecialchars($row['notice']) ?></p>
+					<hr>
+					<p>Autor: <?= htmlspecialchars($row['author']) ?></p>
+					<p>Data de criação: <?= date('d/m/Y H:i', strtotime($row['date_create'])) ?></p>
+
 				</body>
 				</html>
 				<?php
