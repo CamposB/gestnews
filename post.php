@@ -30,6 +30,11 @@ include "templates/header.php";
 
 			// Exibe o conteúdo completo da notícia
 			if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+				$clicks = $row['clicks'];
+				$updateClicksSql = "UPDATE post SET clicks = clicks + 1 WHERE id = :id";
+				$updateClicksStmt = $pdo->prepare($updateClicksSql);
+				$updateClicksStmt->bindParam(':id', $id);
+				$updateClicksStmt->execute();
 				?>
 				<!DOCTYPE html>
 				<html>

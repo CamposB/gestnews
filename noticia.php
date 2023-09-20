@@ -75,8 +75,9 @@
 
             include "templates/rodape.php";
         ?>
-
+        <?php include("mostreader.php") ?>
 
     </header>
+
 </body>
 </html>

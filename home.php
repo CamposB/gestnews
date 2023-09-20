@@ -120,7 +120,9 @@ require("data/conn.php")
         } catch (PDOException $e) {
             echo "Erro: " . $e->getMessage();
         }
+        
     ?>
+    <?php include("mostreader.php") ?>
 
 </body>
 </html>
