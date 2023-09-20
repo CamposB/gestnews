@@ -13,14 +13,15 @@ require("data/conn.php")
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="navbar-top">
-            <a href="#">YouTube</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
+                <a href="https://www.youtube.com/seucanal" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube icon-red"></i></a>
+                <a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram icon-red"></i></a>
+                <a href="https://www.tiktok.com/seutiktok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok icon-red"></i></a>
+                <a href="https://www.facebook.com/seufacebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook icon-red"></i></a>
         </div>
 
         <div class="center">
