@@ -23,7 +23,19 @@ require("data/conn.php")
             <a href="#">TikTok</a>
         </div>
 
-        <!-- Conteúdo da página -->
+        <div class="center">
+            <div class="about-header">
+                <p>Sejam Bem-Vindos</p>
+            </div>
+            <div class="header-content">
+                <div class="logo">
+                    <h2><span>Radio</span> Papo Reto</h2>
+                </div>
+                <div class="banner-ads">
+                    <h2><span style="font-size: 23px;">Radio PAPORETO</span><br>INSIRA UM ANUNCIO AQUI</h2>
+                </div>
+            </div>
+        </div>
 
         <div class="navbar-bottom">
             <a href="#">Categoria 1</a>
