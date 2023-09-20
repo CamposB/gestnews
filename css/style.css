@@ -128,5 +128,62 @@ header h2 {
     color: white;
 	background-color: rgba(0, 0, 0, 0.6);
 }
+/* Estilizando o container dos cards */
+.card-container {
+    max-width: 1200px; /* Tamanho máximo do container */
+    margin: 0 auto; /* Centralizar o container horizontalmente */
+    padding: 20px; /* Espaçamento interno para separar os cards do container */
+}
+/* Estilizando o card */
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
 
+/* Estilizando a imagem dentro do card */
+.card img {
+    float: left;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilizando o título dentro do card */
+.card h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Estilizando o parágrafo de autor dentro do card */
+.card p {
+    margin-bottom: 5px;
+}
+
+/* Estilizando o parágrafo de conteúdo dentro do card */
+.card .content {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Estilizando o link "Leia Mais" dentro do card */
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Estilizando o link "Leia Mais" ao passar o mouse */
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando o título dentro do card */
+.card h3 {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center; /* Alinhar o texto ao centro */
+}
 
