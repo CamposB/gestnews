@@ -22,10 +22,10 @@
         <!-- Conteúdo da página -->
 
         <div class="navbar-bottom">
-            <a href="?category=Politica">Política</a>
-            <a href="?category=Policial">Policial</a>
-            <a href="?category=Entretenimento">Entretenimento</a>
-            <a href="?category=Diversos">Diversos</a>
+            <a href="?category=Politica">Política</a> |
+            <a href="?category=Policial">Policial</a> |
+            <a href="?category=Entretenimento">Entretenimento</a> |
+            <a href="?category=Diversos">Diversos</a> |
             <a href="?category=Todas">Todas</a>
         </div>
 

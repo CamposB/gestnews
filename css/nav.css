@@ -29,7 +29,13 @@
 }
 
 .navbar-bottom a {
-    color: white;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.navbar-bottom p {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 10px; /* Espaçamento entre os links */
 }
