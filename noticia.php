@@ -52,6 +52,8 @@
 
                 // Exibe as notícias encontradas
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    $title = htmlspecialchars($row['title']);
+                    $id = $row['id'];
                     ?>
                     <!DOCTYPE html>
                     <html>
@@ -60,7 +62,7 @@
                         <title><?= htmlspecialchars($row['title']) ?></title>
                     </head>
                     <body>
-                        <h1><?= htmlspecialchars($row['title']) ?></h1>
+                        <h3><a href="post.php?id=<?= $id ?>"><?= $title ?></a></h3>
                         <p>Autor: <?= htmlspecialchars($row['author']) ?></p>
                         <p><?= htmlspecialchars($row['notice']) ?></p>
                     </body>
