@@ -1,0 +1,39 @@
+/* Estilos para o navbar preto na parte superior */
+.navbar-top {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); /* Adiciona sombra preta na parte inferior */
+}
+
+
+.navbar-top a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.navbar-top a:hover {
+    text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+}
+
+/* Estilos para o navbar vermelho na parte inferior */
+.navbar-bottom {
+    background-color: rgb(170, 11, 11);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.navbar-bottom a:hover {
+    text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+}

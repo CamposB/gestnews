@@ -7,31 +7,35 @@ require("data/conn.php")
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Inicial</title>
+    <title>Minha Página Inicial</title>   
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="center">
-            <div class="about-header">
-                <p>Sejam Bem-Vindos</p>
-            </div>
-            <div class="header-content">
-                <div class="logo">
-                    <h2><span>Radio</span> Papo Reto</h2>
-                </div>
-                <div class="banner-ads">
-                    <h2><span style="font-size: 23px;">Radio PAPORETO</span><br>INSIRA UM ANUNCIO AQUI</h2>
-                </div>
-            </div>
+        <div class="navbar-top">
+            <a href="#">YouTube</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
         </div>
+
+        <!-- Conteúdo da página -->
+
+        <div class="navbar-bottom">
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+        </div>
+
     </header>
     <!--FIM DO HEADER-->
+    <br/>
     <div class="center">
         <div class="menu-main">
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
         </div>
     </div>
     <?php
@@ -91,11 +95,16 @@ require("data/conn.php")
                         // Exiba as notícias em forma de cards
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                             ?>
-                            <div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
-                                <h3><?= htmlspecialchars($row['title']) ?></h3>
-                                <p>Autor: <?= htmlspecialchars($row['author']) ?></p>
-                                <p><?= htmlspecialchars($row['notice']) ?></p>
-                            </div>
+                                <div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
+                                    <img src="<?= htmlspecialchars($row['img']) ?>" alt="Imagem da Notícia" width="300" height="300" style="float: left; margin-right: 10px;">
+                                    <div style="overflow: hidden;">
+                                        <h3><?= htmlspecialchars($row['title']) ?></h3>
+                                        <p>Autor: <?= htmlspecialchars($row['author']) ?></p>
+                                        <p><?= htmlspecialchars($row['notice']) ?></p>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+
                             <?php
                         }
                     } else {
