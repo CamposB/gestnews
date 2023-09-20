@@ -96,8 +96,9 @@ require("data/conn.php")
                         // Exiba as notícias em forma de cards
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                             $id = $row['id'];
-                            ?>
-                                <div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
+                            ?>  
+                                <div class="card-container">
+                                <div class="card" style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
                                     <img src="<?= htmlspecialchars($row['img']) ?>" alt="Imagem da Notícia" width="300" height="300" style="float: left; margin-right: 10px;">
                                     <div style="overflow: hidden;">
                                         <h3><?= htmlspecialchars($row['title']) ?></h3>
@@ -109,6 +110,7 @@ require("data/conn.php")
 
                                     </div>
                                     <div style="clear: both;"></div>
+                                </div>
                                 </div>
 
                             <?php
