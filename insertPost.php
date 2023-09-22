@@ -17,6 +17,7 @@
         <label for="author">Autor:</label>
         <input type="text" name="author" id="author" required><br><br>
 
+
         <label for="category">Categoria:</label>
         <select name="category" id="category" required>
             <option value="Politica">Política</option>
@@ -27,6 +28,9 @@
 
         <label for="image">Imagem:</label>
         <input type="file" name="image" id="image" accept="image/*" required><br><br>
+        <label for="video">Código HTML do Vídeo:</label>
+        <textarea id="video" name="video" rows="4" cols="50"></textarea>
+
 
         <input type="submit" value="Inserir Notícia">
     </form>

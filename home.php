@@ -1,6 +1,7 @@
 <?php 
 
-require("data/conn.php")
+require("data/conn.php");
+require("templates/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -14,24 +15,8 @@ require("data/conn.php")
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="navbar-top">
-            <a href="#">YouTube</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-        </div>
-
-        <!-- Conteúdo da página -->
-
-        <div class="navbar-bottom">
-            <a href="#">Categoria 1</a>
-            <a href="#">Categoria 2</a>
-            <a href="#">Categoria 3</a>
-        </div>
-
-    </header>
     <!--FIM DO HEADER-->
     <br/>
     <div class="center">

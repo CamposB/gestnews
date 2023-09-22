@@ -1,30 +1,32 @@
 <?php
-            // Seção para exibir as 5 notícias mais acessadas
-            require_once("data/conn.php");
-            try {
-                require_once("data/conn.php");
+// Seção para exibir as 5 notícias mais acessadas
+require_once("data/conn.php");
+try {
+    require_once("data/conn.php");
 
-                // Consulta SQL para selecionar as 5 notícias mais acessadas
-                $topNewsSql = "SELECT * FROM post ORDER BY clicks DESC LIMIT 5";
-                $topNewsStmt = $pdo->prepare($topNewsSql);
-                $topNewsStmt->execute();
+    // Consulta SQL para selecionar as 5 notícias mais acessadas
+    $topNewsSql = "SELECT * FROM post ORDER BY clicks DESC LIMIT 5";
+    $topNewsStmt = $pdo->prepare($topNewsSql);
+    $topNewsStmt->execute();
 
-                // Exibe as notícias mais acessadas
-                echo '<section class="top-news">';
-                echo '<h2>Notícias mais acessadas:</h2>';
-                echo '<ol>';
+    // Exibe as notícias mais acessadas em uma lista dentro de um container
+    echo '<section class="top-news">';
+    echo '<div class="container">';
+    echo '<h2>Notícias mais acessadas:</h2>';
+    echo '<ul>';
 
-                while ($topNewsRow = $topNewsStmt->fetch(PDO::FETCH_ASSOC)) {
-                    $topNewsTitle = htmlspecialchars($topNewsRow['title']);
-                    $topNewsId = $topNewsRow['id'];
-                    echo '<li><a href="post.php?id=' . $topNewsId . '">' . $topNewsTitle . '</a></li>';
-                }
+    while ($topNewsRow = $topNewsStmt->fetch(PDO::FETCH_ASSOC)) {
+        $topNewsTitle = htmlspecialchars($topNewsRow['title']);
+        $topNewsId = $topNewsRow['id'];
+        echo '<li><a href="post.php?id=' . $topNewsId . '">' . $topNewsTitle . '</a></li>';
+    }
 
-                echo '</ol>';
-                echo '</section>';
-            } catch (PDOException $e) {
-                echo "Erro ao buscar notícias mais acessadas: " . $e->getMessage();
-            }
+    echo '</ul>';
+    echo '</div>';
+    echo '</section>';
+} catch (PDOException $e) {
+    echo "Erro ao buscar notícias mais acessadas: " . $e->getMessage();
+}
 
-            include "templates/rodape.php";
-        ?>  
+include "templates/rodape.php";
+?>
