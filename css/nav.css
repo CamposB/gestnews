@@ -4,7 +4,6 @@
     padding: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); /* Adiciona sombra preta na parte inferior */
 }
 
@@ -12,11 +11,21 @@
 .navbar-top a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    margin: 0 10px; /* Espaçamento entre os links */
+    margin: 0 20px; /* Espaçamento entre os links */
 }
 
 .navbar-top a:hover {
     text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+    color: rgb(170, 11, 11);
+}
+
+.icon-red{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.icon-red a:hover{
+    color: rgb(170, 11, 11);
 }
 
 /* Estilos para o navbar vermelho na parte inferior */

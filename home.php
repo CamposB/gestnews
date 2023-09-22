@@ -14,9 +14,42 @@ require("templates/header.php");
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.min.css">
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+    <header>
+        <div class="navbar-top">
+                <a href="https://www.youtube.com/seucanal" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube icon-red"></i></a>
+                <a href="https://www.instagram.com/seuinstagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram icon-red"></i></a>
+                <a href="https://www.tiktok.com/seutiktok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok icon-red"></i></a>
+                <a href="https://www.facebook.com/seufacebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook icon-red"></i></a>
+        </div>
+
+        <div class="center">
+            <div class="about-header">
+                <p>Sejam Bem-Vindos</p>
+            </div>
+            <div class="header-content">
+                <div class="logo">
+                    <h2><span>Radio</span> Papo Reto</h2>
+                </div>
+                <div class="banner-ads">
+                    <h2><span style="font-size: 23px;">Radio PAPORETO</span><br>INSIRA UM ANUNCIO AQUI</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-bottom">
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+        </div>
+
+    </header>
+>>>>>>> c1fdb809c28ddc7d2409b4c904bd910469e9bc7b
     <!--FIM DO HEADER-->
     <br/>
     <div class="center">
