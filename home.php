@@ -15,6 +15,49 @@ require("templates/header.php");
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.min.css">
+
+    <style>
+        /* Estilos para o elemento .container-news */
+        .container-news {
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+            font-family: Arial, sans-serif; /* Escolha uma fonte legível */
+        }
+
+        /* Estilos para os elementos h2 e ul dentro de .container-news */
+        .container-news h2 {
+            color: #333;
+            font-size: 28px; /* Aumente um pouco o tamanho do título */
+            margin-bottom: 10px; /* Um espaçamento maior entre o título e a lista */
+        }
+
+        .container-news ul {
+            margin-left: 20px;
+            margin-bottom: 5px;
+            transition: color 0.3s ease; /* Transição de cor suave */
+            list-style-type: none; /* Remover marcadores padrão */
+            padding-left: 0;
+        }
+
+        .container-news li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        .container-news li:hover {
+            color: rgb(170, 11, 11); /* Cor diferente ao passar o mouse */
+        }
+
+        .container-news li:before {
+            content: "\2713"; /* Símbolo de marca de seleção como marcador */
+            margin-right: 5px;
+            color: #ff5733; /* Cor para o marcador */
+        }
+
+    </style>
+    
 </head>
 
 <body>
@@ -149,6 +192,8 @@ require("templates/header.php");
         
     ?>
     <?php include("mostreader.php") ?>
+
+    
 
 </body>
 </html>

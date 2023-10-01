@@ -11,7 +11,7 @@ try {
 
     // Exibe as notícias mais acessadas em uma lista dentro de um container
     echo '<section class="top-news">';
-    echo '<div class="container">';
+    echo '<div class="container-news">';
     echo '<h2>Notícias mais acessadas:</h2>';
     echo '<ul>';
 
