@@ -13,15 +13,13 @@ try {
     echo '<section class="top-news">';
     echo '<div class="container-news">';
     echo '<h2>Notícias mais acessadas:</h2>';
-    echo '<ul>';
-
+    $cont = 0;
     while ($topNewsRow = $topNewsStmt->fetch(PDO::FETCH_ASSOC)) {
         $topNewsTitle = htmlspecialchars($topNewsRow['title']);
         $topNewsId = $topNewsRow['id'];
-        echo '<li><a href="post.php?id=' . $topNewsId . '">' . $topNewsTitle . '</a></li>';
+        $cont ++;
+        echo $cont . '<a href="post.php?id=' . $topNewsId . '">' . $topNewsTitle . '</a></br>';
     }
-
-    echo '</ul>';
     echo '</div>';
     echo '</section>';
 } catch (PDOException $e) {

@@ -123,6 +123,11 @@ header h2 {
     background-color:  rgb(170, 11, 11);
     position: relative;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .outra-noticia-1-single h3 {
     padding: 10px;
