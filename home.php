@@ -1,7 +1,7 @@
 <?php 
 
 require("data/conn.php");
-require("templates/header.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -18,8 +18,7 @@ require("templates/header.php");
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
+
     <header>
         <div class="navbar-top">
                 <a href="https://www.youtube.com/seucanal" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube icon-red"></i></a>
@@ -49,7 +48,7 @@ require("templates/header.php");
         </div>
 
     </header>
->>>>>>> c1fdb809c28ddc7d2409b4c904bd910469e9bc7b
+
     <!--FIM DO HEADER-->
     <br/>
     <div class="center">

@@ -1,9 +1,9 @@
 <?php
 // Configurações do banco de dados
-$host = "localhost"; // Host do banco de dados (geralmente localhost)
-$usuario = "root"; // Nome de usuário do banco de dados
-$senha = ""; // Senha do banco de dados (deixe em branco neste caso)
-$banco_de_dados = "gestnews"; // Nome do banco de dados
+$host = "154.49.247.204"; // Host do banco de dados (geralmente localhost)
+$usuario = "u821734860_projacks"; // Nome de usuário do banco de dados
+$senha = "Nossaradio@90"; // Senha do banco de dados (deixe em branco neste caso)
+$banco_de_dados = "u821734860_nossaradio"; // Nome do banco de dados
 
 try {
     // Cria uma conexão PDO com o banco de dados

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento da Rádio Papo Reto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: rgb(170, 11, 11);
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #countdown {
+            font-size: 1.5em;
+            color: rgb(170, 11, 11);
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgb(170, 11, 11);
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <h4 class="nav-link disabled" style="color: white;">Nossa Rádio Papo Reto</h4>
+        </li>
+      </ul>
+    
+    <div class="container">
+        <h3 class="mt-5">Em Breve! Nosso site estará no ar.</h3>
+        <div id="countdown" class="mt-4">Tempo restante: <span id="timer"></span></div>
+    </div>
+
+    <footer class="text-center">
+        <p>Copyright By Projack's Tech</p>
+    </footer>
+
+    <script>
+        // Data de lançamento (7 dias a partir de agora)
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 7);
+
+        // Função para atualizar o cronômetro
+        function updateCountdown() {
+            const now = new Date();
+            const timeLeft = launchDate - now;
+            
+            if (timeLeft <= 0) {
+                document.getElementById('timer').textContent = 'Lançado!';
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('timer').textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+
+        // Atualiza o cronômetro a cada segundo
+        setInterval(updateCountdown, 1000);
+
+        // Chama a função de atualização imediatamente para evitar atrasos
+        updateCountdown();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
