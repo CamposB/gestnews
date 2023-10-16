@@ -1,3 +1,13 @@
+<?php
+ session_start();
+
+ if (!isset($_SESSION['success'])) {
+     $_SESSION['unsuccess'] = 0;
+     header("Location: home_gestNews.php"); 
+     exit(); 
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +51,7 @@
 					<span class="login100-form-title p-b-34 p-t-27">
 						Log in
 					</span>
+                    <?php echo $_SESSION['unsuccess'] ?>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input class="input100" type="text" name="username" placeholder="Username">

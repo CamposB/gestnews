@@ -39,6 +39,9 @@ if (isset($_POST['login_user'])) {
             header('location: home_gestNews.php'); // Redireciona para a página de destino
         } else {
             array_push($errors, "Credenciais inválidas. Tente novamente.");
+            $_SESSION['unsuccess'] = "Credenciais inválidas. Tente novamente.";
+            header('location: login.php');
+
         }
     }
 }
