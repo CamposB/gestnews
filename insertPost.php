@@ -124,6 +124,27 @@
                 flex-direction: column;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            .container-dois {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .form {
+                width: 100%;
+                padding: 2rem; /* Aumente o preenchimento do formulário */
+            }
+
+            .input-box input,
+            .input-box textarea,
+            .input-box select {
+                width: 100%;
+                padding: 1rem; /* Aumente o preenchimento dos elementos do formulário */
+                margin: 0.5rem 0; /* Aumente a margem entre os elementos do formulário */
+            }
+        }
+
     </style>
 </head>
 <body>
