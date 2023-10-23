@@ -2,91 +2,175 @@
 <html>
 <head>
     <title>Inserir Notícia</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #f9bb74;
         }
 
         h2 {
+            margin-top: 20px;
             text-align: center;
-            color: #333;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        input[type="text"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="file"] {
-            width: 100%;
-            margin-top: 5px;
+            color: white;
         }
 
         input[type="submit"] {
-            background-color: #007BFF;
-            color: #fff;
             border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
+            background-color: #6c63ff;
+            padding: 0.62rem;
             cursor: pointer;
-            margin-top: 10px;
+            border-radius: 5px;
+            color: #fff;
+            width: 100%;
+            margin-top: 2.5rem;
+            border: none;
+            
         }
 
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #f9bb74;
         }
+
+        .container-dois{
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+            margin: 50px;
+            
+        }
+
+        .form-image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6c63ff;
+            padding: 1rem;
+        }
+
+        .form-image img{
+            width: 31rem;
+        }
+
+        .form{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 3rem;
+        }
+
+        .input-group{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .input-box{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.1rem;
+        }
+
+
+        .input-box input{
+            margin: 0.6rem 0;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px #0000001c;
+            size: 500px;
+        }
+
+        .gender-group{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.62rem;
+            padding: 0 0.5rem;
+        }
+
+        .gender-input{
+            display: flex;
+            align-items: center;
+        }
+
+        .gender-input input{
+            margin-right: 0.35rem;
+
+        }
+
+        .gender-input label{
+            font-size: 0.81rem;
+            font-weight: 600;
+            color:#000000c0;
+        }
+        
+
     </style>
 </head>
 <body>
     <h2>Inserir Notícia</h2>
-    <form method="POST" action="process.php" enctype="multipart/form-data">
-        <label for="title">Título:</label>
-        <input type="text" name="title" id="title" required><br><br>
+        <div class="container-dois">
+            <div class="form-image">
+                <img src="images/undraw_businessman_e7v0.svg">
+            </div>
+            <div class="form">
+                <form method="POST" action="process.php" enctype="multipart/form-data">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="title">Título:</label>
+                        <input type="text" name="title" id="title" required><br><br>
+                    </div>
 
-        <label for="notice">Notícia:</label><br>
-        <textarea name="notice" id="notice" required></textarea><br><br>
+                    <div class="input-box">
+                        <label for="notice">Notícia:</label><br>
+                        <textarea name="notice" id="notice" rows="4" cols="100" required></textarea><br><br>
+                    </div>
 
-        <label for="author">Autor:</label>
-        <input type="text" name="author" id="author" required><br><br>
+                    <div class="input-box">
+                        <label for="author">Autor:</label>
+                        <input type="text" name="author" id="author" required><br><br>
+                    </div>
 
-        <label for="category">Categoria:</label>
-        <select name="category" id="category" required>
-            <option value="Politica">Política</option>
-            <option value="Policial">Policial</option>
-            <option value="Entretenimento">Entretenimento</option>
-            <option value="Outras">Outras</option>
-        </select><br><br>
+                    <div class="input-box">
+                        <label for="category">Categoria:</label>
+                        <select name="category" id="category" required>
+                            <option value="Politica">Política</option>
+                            <option value="Policial">Policial</option>
+                            <option value="Entretenimento">Entretenimento</option>
+                            <option value="Outras">Outras</option>
+                        </select><br><br>
+                    </div>
 
-        <label for="image">Imagem:</label>
-        <input type="file" name="image" id="image" accept="image/*" required><br><br>
-        
-        <label for="video">Código HTML do Vídeo:</label>
-        <textarea id="video" name="video" rows="4" cols="50"></textarea>
+                    <div class="input-box">
+                        <label for="image">Imagem:</label>
+                        <input type="file" name="image" id="image" accept="image/*" required><br><br>
+                    </div>
 
-        <input type="submit" value="Inserir Notícia">
-    </form>
+                    <div class="input-box">
+                        <label for="video">Código HTML do Vídeo:</label>
+                        <textarea id="video" name="video" rows="2" cols="50"></textarea>
+                    </div>
+
+                    <div class="continue-button">
+                        <input type="submit" value="Inserir Notícia">
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
 </body>
 </html>
 
