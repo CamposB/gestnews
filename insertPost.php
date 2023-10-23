@@ -93,30 +93,35 @@
             box-shadow: 1px 1px 6px #0000001c;
             size: 500px;
         }
-
-        .gender-group{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 0.62rem;
-            padding: 0 0.5rem;
-        }
-
-        .gender-input{
-            display: flex;
-            align-items: center;
-        }
-
-        .gender-input input{
-            margin-right: 0.35rem;
-
-        }
-
-        .gender-input label{
-            font-size: 0.81rem;
-            font-weight: 600;
-            color:#000000c0;
-        }
         
+        @media screen and (max-width: 1330px) {
+            .form-image{
+                display: none;
+            }    
+            
+            .container-dois{
+                width: 50%;
+            }
+
+            .form {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1064px){
+
+            .container-dois{
+                width: 90%;
+                height: auto;
+            }
+
+            .input-group{
+                flex-direction:column;
+                overflow-y: scroll;
+                flex-wrap: nowrap;
+                max-width: 10rem;
+            }
+        }
 
     </style>
 </head>
