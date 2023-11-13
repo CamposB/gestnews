@@ -537,7 +537,7 @@ $clicks = obterTotalCliques();
                 <!-- /.container-fluid -->
 
                 <div class="container">
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Cadastrar nova Notícia</button>
+                    <a type="button" href="insertPost.php" class="btn btn-primary btn-lg btn-block">Cadastrar nova Notícia</a>
                 </div>
 
             </div>

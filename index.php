@@ -6,7 +6,7 @@
 
 	<title>Nossa Rádio - Papo Reto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/pix.png" type="image/x-icon">
+	<link rel="icon" href="img/icon.png" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
@@ -448,11 +448,19 @@
 		</div>
 		<div class="widget widget-latest-post">
 		<div class="widget-title">
-			<h3>Apoie esse projeto</h3>
-		</div>
-		<div class="widget-body">
-			<img src="img/pix.png"></img>
-		</div>
+    <h3>Nossos Apoiadores</h3>
+</div>
+<div class="widget-body">
+    <img style="display: block; margin: auto;" src="img/patrocinadores.gif" />
+</div>
+
+		<div class="widget widget-latest-post">
+			<div class="widget-title">
+				<h3>Apoie esse projeto</h3>
+			</div>
+			<div class="widget-body">
+				<img src="img/pix.png"></img>
+			</div>
 		</div>
 	</div>
 	</div>

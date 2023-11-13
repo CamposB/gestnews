@@ -26,6 +26,9 @@
                             if (!empty($row['video'])) {
                                 // Exibe o vídeo incorporado usando o código HTML do iframe
                                 echo $row['video'];
+                            } else {
+                                // Se não houver vídeo, exibe a imagem da notícia no centro da página
+                                echo '<div style="text-align: center;"><img src="' . htmlspecialchars($row['img']) . '" alt="Imagem da Notícia" style="width: 70%; max-width: 800px; margin-top: 20px;"></div>';
                             }
                             ?>
                             <p><?= htmlspecialchars($row['notice']) ?></p>

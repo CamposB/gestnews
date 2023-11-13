@@ -19,9 +19,6 @@
                 <div class="logo">
                     <h2><span>Nossa Radio</span> Papo Reto</h2>
                 </div>
-                <div class="banner-ads">
-                    <h2><span style="font-size: 23px;">Radio PAPORETO</span><br>INSIRA UM ANUNCIO AQUI</h2>
-                </div>
             </div>
         </div>
 

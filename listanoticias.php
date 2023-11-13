@@ -30,13 +30,14 @@
                 ?>
                         <div class="card-container">
                             <div class="card" style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>
-                                <img src="<?= htmlspecialchars($row['img']) ?>" alt="Imagem da Notícia" width="300" height="auto" style="float: left; margin-right: 10px; margin-top: 60px">
+                            <img src="<?= htmlspecialchars($row['img']) ?>" alt="Imagem da Notícia" width="500" height="auto" style="display: block; margin: 0 auto; margin-top: 60px;">
+                            <hr>
                                 <div style="overflow: hidden;">
                                 <h3><a href="post.php?id=<?= $id ?>"><?= htmlspecialchars($row['title']) ?></a></h3>
 
                                     <hr>
                                     <br>
-                                    <p><?= strlen($row['notice']) > 1100 ? substr(htmlspecialchars($row['notice']), 0, 900) . '... <a href="post.php?id=' . $id  . '">Leia Mais</a>' : htmlspecialchars($row['notice']) ?></p>
+                                    <p><?= strlen($row['notice']) > 100 ? substr(htmlspecialchars($row['notice']), 0, 100) . '... <a href="post.php?id=' . $id  . '">Leia Mais</a>' : htmlspecialchars($row['notice']) ?></p>
                                     <p>Autor: <?= htmlspecialchars($row['author']) ?></p>
                                     <p>Data de criação: <?= date('d/m/Y H:i', strtotime($row['date_create'])) ?></p>
 

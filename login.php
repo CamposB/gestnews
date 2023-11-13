@@ -1,6 +1,6 @@
 <?php
  session_start();
-
+ $_SESSION['success'] = 1;
  if (!isset($_SESSION['success'])) {
      $_SESSION['unsuccess'] = 0;
      header("Location: home_gestNews.php"); 

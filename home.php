@@ -79,9 +79,10 @@ require("data/conn.php");
                     <h2><span>Radio</span> Papo Reto</h2>
                 </div>
                 <div class="banner-ads">
-                    <h2><span style="font-size: 23px;">Radio PAPORETO</span><br>INSIRA UM ANUNCIO AQUI</h2>
+                    <img src="img/GestNews.png" alt="Anúncio" style="max-width: 100%; height: auto;">
                 </div>
             </div>
+
         </div>
 
         <div class="navbar-bottom">

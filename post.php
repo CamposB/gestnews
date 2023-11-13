@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<?php  require("data/conn.php");?>
 <html lang="en">
 	<head>
 	<meta charset="utf-8">
 
 
-	<title>blog detail page - Bootdey.com</title>
+	<title>Nossa Radio Papo Reto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/nav.css">
@@ -419,7 +420,7 @@
 	</head>
 <body>
 
-	<?php	require("templates/header.php"); require("data/conn.php");	?>
+	<?php	require("templates/header.php")?>
 	<div class="blog-single gray-bg">
 		<div class="container">
 			<div class="row align-items-start">
